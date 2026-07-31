@@ -449,27 +449,39 @@ footer {
 ========================= */
 
 .menu-home-link {
-  margin-top: 14px;
-  padding-top: 18px !important;
+  margin-top: 16px;
+  padding: 15px 18px !important;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.28);
-
-  color: #ffffff !important;
-  font-weight: 800;
+  border-top: none;
+  border-radius: 16px;
 
   background: linear-gradient(
     135deg,
-    rgba(143, 215, 245, 0.22),
-    rgba(187, 168, 255, 0.22)
+    #bfe8f7,
+    #d9ccf7
   );
+
+  color: #294762 !important;
+  font-weight: 800;
+
+  box-shadow: 0 8px 18px rgba(105, 145, 180, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .menu-home-link:hover {
+  transform: translateY(-3px);
+
   background: linear-gradient(
     135deg,
-    rgba(143, 215, 245, 0.38),
-    rgba(187, 168, 255, 0.38)
+    #aee0f4,
+    #cbbaf2
   );
+
+  box-shadow: 0 12px 26px rgba(105, 145, 180, 0.28);
 }
 
 
