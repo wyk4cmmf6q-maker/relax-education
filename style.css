@@ -443,3 +443,215 @@ footer {
     font-size: 0.92rem;
   }
 }
+
+/* =========================
+   目次内のホームリンク
+========================= */
+
+.menu-home-link {
+  margin-top: 14px;
+  padding-top: 18px !important;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+
+  color: #ffffff !important;
+  font-weight: 800;
+
+  background: linear-gradient(
+    135deg,
+    rgba(143, 215, 245, 0.22),
+    rgba(187, 168, 255, 0.22)
+  );
+}
+
+.menu-home-link:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(143, 215, 245, 0.38),
+    rgba(187, 168, 255, 0.38)
+  );
+}
+
+
+/* =========================
+   まとめサイトへ戻る
+========================= */
+
+.home-section {
+  padding: 40px 7% 18px;
+}
+
+.home-section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 46px 34px;
+
+  text-align: center;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(229, 247, 255, 0.92),
+    rgba(241, 234, 255, 0.92)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 20px 50px rgba(100, 145, 180, 0.16);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.home-section-icon {
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+}
+
+.home-section h2 {
+  margin-bottom: 14px;
+
+  color: #294762;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+
+.home-section p {
+  margin-bottom: 26px;
+
+  color: #60788f;
+  line-height: 1.9;
+}
+
+.home-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 34px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #8fd7f5, #bba8ff);
+
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: 0 14px 30px rgba(117, 169, 215, 0.28);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-link-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 20px 40px rgba(117, 169, 215, 0.38);
+}
+
+
+/* =========================
+   お問い合わせ
+========================= */
+
+.contact-section {
+  padding: 18px 7% 70px;
+}
+
+.contact-section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 46px 34px;
+
+  text-align: center;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(238, 251, 242, 0.94),
+    rgba(255, 244, 232, 0.94)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 20px 50px rgba(120, 160, 140, 0.14);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.contact-section-icon {
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+}
+
+.contact-section h2 {
+  margin-bottom: 14px;
+
+  color: #294762;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+
+.contact-section p {
+  margin-bottom: 26px;
+
+  color: #60788f;
+  line-height: 1.9;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 34px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #9eddb8, #f4c697);
+
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: 0 14px 30px rgba(130, 175, 150, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 20px 40px rgba(130, 175, 150, 0.34);
+}
+
+
+/* =========================
+   スマホ表示
+========================= */
+
+@media (max-width: 650px) {
+  .home-section,
+  .contact-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .home-section-inner,
+  .contact-section-inner {
+    padding: 34px 20px;
+    border-radius: 26px;
+  }
+
+  .home-link-btn,
+  .contact-button {
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 18px;
+  }
+}
